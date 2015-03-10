@@ -65,3 +65,11 @@
     padding: 10px;
     width 400px;
 }
+
+#calendar {
+    position: fixed;
+    height:auto;
+    width:auto;
+    top: 150px;
+    left: 250px;
+}
