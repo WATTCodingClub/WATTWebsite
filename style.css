@@ -86,3 +86,16 @@
     padding: 10px;
     line-height: 2;
 }
+
+#resourceBox {
+    position fixed;
+    top: 190px;
+    left: 190px; 
+    width: 600px;
+    background-color: #CCFFFF;
+    padding: 10px;
+    line-height: 2;
+    font size: 10;
+}
+	
+
