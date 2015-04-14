@@ -1,89 +1,114 @@
 <!Calendar>
-
 <!DOCTYPE html>
 <html>
-
+    
 <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset='utf-8' />
+    <link href='../fullcalendar.css' rel='stylesheet' />
+    <link href='../fullcalendar.print.css' rel='stylesheet' media='print' />
+    <script src='../lib/moment.min.js'></script>
+    <script src='../lib/jquery.min.js'></script>
+    <script src='../fullcalendar.min.js'></script>
+    <script>
+        
+        $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 
-<link rel="stylesheet" href="style.css">
+	$(document).ready(function() {
 
-</style>
+		$('#calendar').fullCalendar({
+			defaultDate: '2015-04-1',
+			editable: true,
+			eventLimit: true, // allow "more" link when too many events
+			events: [
+				{
+                    title: '5th Grade Girls Session',
+					start: '2015-04-20T15:15:00'
+				},
+				{
+					title: '4th Grade Girls Session',
+					start: '2015-04-21T15:15:00',
+				}
+			]
+		});
+		
+	});
+
+    </script>
+    <style>
+        
+        #calendar {
+            max-width: 1500px;
+            width: 600px;
+            height: 700px;
+            margin: 0 auto;
+            top: 130px;
+            left: 200px;
+            position:absolute;
+        }
+        
+        #upcomingevents
+        {
+            right: 250px;
+            top: 130px;
+            width: 350px;
+            height: 300px;
+            background-color: #CCFFFF;
+            padding: 10px;
+            line-height: 2;
+            font size: 10;
+            position:absolute;
+        }
+        
+    </style>
 </head>
 
+    
 <body>
-
-<div id="header">
- 	<img src="Logo.JPG" alt=“Logo” style="width:90px" height="90px" align="left">
- 	<h1>WATT Coding Club</h1>
-</div>
-
-<div id="calendar">
-    <table border="3" cellspacing="1" cellpadding="30"><caption>March</caption>
-        <tr cellpadding="10">
-            <td><b>Sunday</b></td>
-            <td><b>Monday</b></td>
-            <td><b>Tuesday</b></td>
-            <td><b>Wednesday</b></td>
-            <td><b>Thursday</b></td>
-            <td><b>Friday</b></td>
-            <td><b>Saturday</b></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-</div>
     
-<div id="nav">
- 	<a href="homepage.html">Home</a><br>
- 	<a href="whoweare.html">Who We Are</a><br>
-    <a href="calendar.html">Calendar</a><br>
- 	<a href="club.html">Club</a><br>
- 	<a href="resources.html">Resources</a><br>
-</div>
+    <div id="header">
+        <img src="Logo.JPG" alt=“Logo” style="width:90px" height="90px" align="left">
+        <h1>WATT Coding Club</h1>
+    </div>
     
-<div id="section2">
-    <p>
-        Upcoming events...
-    </p>
-</div>
-
-<div id="footer">
-  	WATT Coding
-</div>
-
+    <div id="nav">
+        <a href="homepage.html">Home</a><br>
+        <a href="whoweare.html">Who We Are</a><br>
+        <a href="calendar.html">Calendar</a><br>
+        <a href="club.html">Club</a><br>
+        <a href="resources.html">Resources</a><br>
+    </div>
+    
+    <div id="footer">
+  	     WATT Coding
+    </div> 
+    
+    <div id="calendar"></div>
+    
+    <div id="upcomingevents"> 
+        <p>
+            Upcoming Events <br>
+            <ul>
+                <li>April 20th: Fifth Grade Girls Session</li>
+                <li>April 21st: Fourth Grade Girls Session</li>
+                <li>May 5th: FOurth Grade Girls Sessoin</li>
+            </ul>
+        </p>
+    </div>
+    
 </body>
+    
 </html>

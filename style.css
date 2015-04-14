@@ -1,21 +1,23 @@
 #header {
+    width: 100%;
     background-color:black;
     color:white;
     text-align:center;
-    padding:5px;
     height: 93px;
-    width: auto;
+    padding:5px;
+    margin:0;
+    float: left;
  }
 
-
 #nav {
+    position:fixed;
     line-height:30px;
     background-color:#eeeeee;
-    height:500px;
+    height:100%;
     width:100px;
-    align:left;
     float: left;
-    padding:5px;       
+    padding:5px;
+    top:103px;
  }
 
 #section {
@@ -24,19 +26,26 @@
     width: 100%;
     top: 120px;
     left: 110px;
+    margin:0;
+    float:left;
 }
 
 #footer {
     width:100%;
     height:40px;
-    position:absolute;
+    position:fixed;
     bottom:0;
     left:0;
     background-color:black;
     color:white;
     clear:both;
     text-align:center;
-    padding:5px; 
+    padding:5px;
+}
+
+body {
+    margin-left:0px;
+    margin-top:0px;
 }
 
 
@@ -67,22 +76,29 @@
     width 400px;
 }
 
-#calendar {
+<!--#calendar {
     position: fixed;
     height:auto;
     width:300px;
     top: 150px;
     left: 170px;
-}
+}-->
 
 
 #section2 {
     position: fixed;
-    top: 190px;
-    right: 50px; 
-    width: 300px;
-    height: 400px;
-    background-color: #CCFFFF;
-    padding: 10px;
-    line-height: 2;
+    height: 600px;
+    width: 100%;
+    top: 150px;
+    left: 150px;
 }
+
+#section3 {
+    margin: 20px 10px;
+    padding: 0;
+    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+    font-size: 14px; 
+    width: 500px;
+}
+
+
