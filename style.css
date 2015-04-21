@@ -105,6 +105,18 @@ body {
     line-height: 2;
     font size: 10;
 }
+
+img.pos_fixed {
+    position: fixed;
+    top: 30px;
+    right: 5px;
+}
+
+resourceBox.pos_fixed {
+    position: fixed;
+    top: 30px;
+    right: 5px;
+}
 	
 >>>>>>> origin/master
 
