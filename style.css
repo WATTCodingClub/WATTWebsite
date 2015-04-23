@@ -107,9 +107,12 @@ body {
 }
 
 img.pos_fixed {
-    position: fixed;
-    top: 30px;
-    right: 5px;
+    float: right;
+}
+
+img.pos_clear {
+    clear: both;
+    float: right;
 }
 
 resourceBox.pos_fixed {
