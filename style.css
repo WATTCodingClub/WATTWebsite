@@ -1,9 +1,13 @@
+<!--most of the styles for elements listed here are used in all of the pages of our website-->
+
+<!--main html style-->
 #html {
     position:absolute;
     height:100%;
     width:100%;
 }
 
+<!--styles for header-->
 #header {
     width: 100%;
     background-color:black;
@@ -17,6 +21,7 @@
     font-size: 150%;
  }
 
+<!--styles for navigation bar-->
 #nav {
     position:absolute;
     line-height:35px;
@@ -33,6 +38,7 @@
  }
 a:visited {color:#088A85}
 
+<!--styles for a specific section, or box, used in some pages-->
 #section {
     position: absolute;
     <!--height: 100px;-->
@@ -43,6 +49,7 @@ a:visited {color:#088A85}
     <!--float:left;-->
 }
 
+<!--styles for the footer-->
 #footer {
     width:100%;
     height:40px;
@@ -58,11 +65,13 @@ a:visited {color:#088A85}
     font-family: impact;
 }
 
+<!--styles for the main body-->
 body {
     margin-left:0px;
     margin-top:0px;
 }
 
+<!--styles for a question box we may choose to add in the future-->
 #question {
     position: fixed;
     top: 500px;
@@ -81,7 +90,7 @@ body {
     left: 170px;
 }-->
 
-
+<!-- styles for another section box-->
 #section2 {
     position: fixed;
     height: 600px;
@@ -90,6 +99,7 @@ body {
     left: 150px;
 }
 
+<!--styles for another section box-->
 #section3 {
     margin: 20px 10px;
     padding: 0;
@@ -98,8 +108,7 @@ body {
     width: 500px;
 }
 
-<<<<<<< HEAD
-=======
+<!--syles for the box that displays resources, used in the resources page-->
 #resourceBox {
     position fixed;
     top: 190px;
@@ -111,6 +120,7 @@ body {
     font size: 10;
 }
 
+<!--code to position the picture in the resources page correctly on the right hand side of the window-->
 img.pos_fixed {
     float: right;
 }
@@ -125,6 +135,4 @@ resourceBox.pos_fixed {
     top: 30px;
     right: 5px;
 }
-	
->>>>>>> origin/master
 

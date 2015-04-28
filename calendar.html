@@ -3,7 +3,9 @@
 <html>
     
 <head>
+    <!--links this code to the css stylsheet-->
     <link rel="stylesheet" href="style.css">
+    <!--code associated with the style of the calendar-->
     <meta charset='utf-8' />
     <link href='../fullcalendar.css' rel='stylesheet' />
     <link href='../fullcalendar.print.css' rel='stylesheet' media='print' />
@@ -29,6 +31,7 @@
 
 	$(document).ready(function() {
 
+        //inserting events into the calendar
 		$('#calendar').fullCalendar({
 			defaultDate: '2015-04-1',
 			editable: true,
@@ -117,6 +120,8 @@
 	});
 
     </script>
+    
+    <!--defines styles specific to this page-->
     <style>
         
         #calendar {
@@ -151,11 +156,13 @@
     
 <body>
     
+    <!--header for the page-->
     <div id="header">
         <img src="Logo.JPG" alt=“Logo” width="90px" height="90px" align="left">
         <h1>WATT Coding Club</h1>
     </div>
     
+    <!--navigation bar for the page-->
     <div id="nav" style="height:120%">
         <a href="homepage.html">Home</a><br>
         <a href="whoweare.html">Who We Are</a><br>
@@ -164,19 +171,23 @@
         <a href="resources.html">Resources</a><br>
     </div>
     
+     <!--footer for the page-->
     <div id="footer">
   	     Women Advancing Tomorrow's Technologists
     </div> 
     
+    <!--inserts the calendar-->
     <div id="calendar"></div>
     
+    <!--presents a box that highlights important upcoming events that are visible in the current month of the calendar-->
     <div id="upcomingevents"> 
         <p>
             Upcoming Events <br>
             <ul>
-                <li>April 20th: Fifth Grade Girls Session</li>
-                <li>April 21st: Fourth Grade Girls Session</li>
-                <li>May 5th: FOurth Grade Girls Sessoin</li>
+                <li>April 30th: Fourth Grade Girls @ St. Joes</li>
+                <li>May 1st: Fifth Grade Girls @ St. Joes</li>
+                <li>May 4th: Fifth Grade Girls @ OLL</li>
+                <li>May 5th: Fourth Grade Girls @ OLL</li>
             </ul>
         </p>
     </div>
